@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://JainiSolanki:Jaini%401509@devconnector.ybt4ksh.mongodb.net/?retryWrites=true&w=majority&appName=DevConnector",
-    "jwtsecret": "mysecrettoken"
+    "jwtsecret": "mysecrettoken",
+    "githubClientId" : "Ov23libTEiLe0aklclNz",
+    "githubSecret" : "05cac485f2bdb9c57f8e5d4c9412aa1b755850cf"
 }

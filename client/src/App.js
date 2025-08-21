@@ -10,6 +10,9 @@ import store from './store';
 import Alert from './components/layout/Alert';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
+import PropTypes from 'prop-types';
+import Dashboard from './components/dashboard/Dashboard';
+import PrivateRoute from './components/routing/PrivateRoute';
 
 if(localStorage.token) {
         setAuthToken(localStorage.token);}
@@ -28,6 +31,14 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </Fragment>
   </Router>

@@ -13,15 +13,21 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@reduxjs/toolkit": "^2.8.2",
+    "assert": "^2.1.0",
     "bcryptjs": "^3.0.2",
     "config": "^4.1.0",
+    "crypto-browserify": "^3.12.1",
     "express": "^5.1.0",
     "express-validator": "^7.2.1",
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.17.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.4",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "concurrently": "^9.2.0",
